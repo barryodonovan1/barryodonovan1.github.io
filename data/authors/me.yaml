@@ -49,6 +49,7 @@ education:
   - degree: PhD Physics
     institution: Trinity College Dublin
     start: 2025-09-01
+    year: 2025-09-01 to present  # shown in the bio instead of start/end
     summary: |
       Atmospheric retrievals of brown dwarfs with
       JWST NIRSpec and MIRI spectra. Supervised by Prof. Johanna Vos.

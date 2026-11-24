@@ -3,6 +3,17 @@ title: 'Projects'
 date: 2024-05-19
 type: landing
 
+# Hidden for now: don't build this page or anything under it.
+# Delete these build/cascade lines (and uncomment the menu entry) to bring it back.
+build:
+  render: never
+  list: never
+cascade:
+  build:
+    render: never
+    list: never
+    publishResources: false
+
 # Page sections
 sections:
   - block: collection
