@@ -20,10 +20,16 @@ sections:
         education: ''
         interests: ''
     design:
-      # Use the new Gradient Mesh which automatically adapts to the selected theme colors
+      # Background photo: Trinity College Dublin Campanile (credit: David Kernan, CC BY 4.0, see footer)
       background:
-        gradient_mesh:
-          enable: true
+        image:
+          filename: header-campanile.jpg
+          filters:
+            brightness: 0.55 # darken so the text stays readable
+          size: cover
+          position: center 30%
+          parallax: false
+        text_color_light: true
 
       # Name heading sizing to accommodate long or short names
       name:
@@ -35,20 +41,40 @@ sections:
         shape: circle # Options: circle (default), square, rounded
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: '🔭 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        I study the atmospheres of brown dwarfs, objects that sit between the
+        most massive planets and the smallest stars. Because they have no
+        host star outshining them, brown dwarfs are some of the best natural
+        laboratories for understanding the atmospheres of giant exoplanets.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        My work centres on **atmospheric retrievals**: using Bayesian inference
+        to work backwards from an observed spectrum to the chemistry,
+        temperature structure and clouds that produced it. I'm particularly
+        interested in:
 
-        Please reach out to collaborate 😃
+        - **Clouds**: how they form, what they're made of, how they're
+          distributed across the atmosphere, and how they evolve over time
+        - **Chemistry**: what the abundances of molecules like H₂O, CO, CH₄
+          and NH₃ tell us about atmospheric processes and how these objects
+          formed
+        - **The L/T transition**: the poorly understood point where brown
+          dwarfs cool enough for their clouds to clear, and their spectra
+          change dramatically
+
+        A major focus of my PhD is **2MASS J0355+1133**, a young, very red L
+        dwarf, which I'm studying with JWST NIRSpec and MIRI spectra spanning
+        the near- to mid-infrared. I'm retrieving its atmosphere with the [Brewster](https://github.com/barryodonovan1/brewster_v2) retrieval framework.
+
+        I'm always happy to chat about brown dwarfs, retrievals or
+        collaborations. Feel free to [get in touch](mailto:odonovb3@tcd.ie).
     design:
       columns: '1'
   - block: collection
     id: papers
     content:
-      title: Featured Publications
+      title: First Author Publications
       filters:
         folders:
           - publications
@@ -58,52 +84,56 @@ sections:
       columns: 2
   - block: collection
     content:
-      title: Recent Publications
+      title: All Publications
       text: ''
       filters:
         folders:
           - publications
         exclude_featured: false
+      archive:
+        enable: true
+        link: 'https://scixplorer.org/search?p=1&q=orcid%3A0009-0000-3375-2098&sort=score+desc&sort=date+desc&d=astrophysics'
+        text: See all publications on SciXplorer
     design:
       view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
-  - block: collection
-    id: news
-    content:
-      title: Recent News
-      subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: blog
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 10
-      # Filter on criteria
-      filters:
-        author: ''
-        category: ''
-        tag: ''
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ''
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: card
-      # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
+#   - block: collection
+#     id: talks
+#     content:
+#       title: Recent & Upcoming Talks
+#       filters:
+#         folders:
+#           - events
+#     design:
+#       view: card
+#   - block: collection
+#     id: news
+#     content:
+#       title: Recent News
+#       subtitle: ''
+#       text: ''
+#       # Page type to display. E.g. post, talk, publication...
+#       page_type: blog
+#       # Choose how many pages you would like to display (0 = all pages)
+#       count: 10
+#       # Filter on criteria
+#       filters:
+#         author: ''
+#         category: ''
+#         tag: ''
+#         exclude_featured: false
+#         exclude_future: false
+#         exclude_past: false
+#         publication_type: ''
+#       # Choose how many pages you would like to offset by
+#       offset: 0
+#       # Page order: descending (desc) or ascending (asc) date.
+#       order: desc
+#     design:
+#       # Choose a layout view
+#       view: card
+#       # Reduce spacing
+#       spacing:
+#         padding: [0, 0, 0, 0]
   - block: cta-card
     demo: true # Only display this section in the HugoBlox Kit demo site
     content:

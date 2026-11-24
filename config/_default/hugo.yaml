@@ -6,7 +6,7 @@
 # Website name (set in params.yaml under hugoblox.branding.name)
 title: ''
 # Website URL
-baseURL: 'https://example.com/'
+baseURL: 'https://barryodonovan1.github.io/'
 
 ############################
 ## LANGUAGE
@@ -60,6 +60,15 @@ markup:
   highlight:
     lineNos: false
 security:
+  exec:
+    allow:
+      - '^(dart-)?sass$'
+      - '^go$'
+      - '^git$'
+      - '^node$'
+      - '^npx$'
+      - '^postcss$'
+      - '^tailwindcss$'
   _merge: deep
 sitemap:
   _merge: deep

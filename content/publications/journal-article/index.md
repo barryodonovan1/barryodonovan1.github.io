@@ -1,102 +1,80 @@
 ---
-title: "An example journal article"
+title: "Heavy-element-enriched atmospheres and where they are born"
 authors:
 - me
-- Robert Ford
-author_notes:
-- "Equal contribution"
-- "Equal contribution"
-date: "2015-09-01T00:00:00Z"
+- Bertram Bitsch
+date: "2026-01-28T00:00:00Z"
 
-# Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
-
-# Publication type.
-# Accepts a single type but formatted as a YAML list (for Hugo requirements).
-# Enter a publication type from the CSL standard.
+# Publication type (CSL standard).
 publication_types: ["article-journal"]
 
-# Publication metadata — structured fields used by citation styles and BibTeX export.
 publication:
-  name: "Journal of Source Themes"
-  volume: 1
-  issue: 1
+  name: "Astronomy & Astrophysics"
+  volume: 706
+  pages: "A30"  # if the template ignores this, that's fine
 
 peer_reviewed: true
 open_access: true
-license: CC-BY-4.0
+license: CC-BY-4.0  # TODO: check against the licence line on the A&A page
 
-# Awards, honors, and recognitions. Surfaced as badges on the page and in listings.
-# Note: a Test of Time award years after publication uses an explicit `date` that differs from the page date.
-awards:
-  - name: "Test of Time Award"
-    level: winner
-    date: "2025"
-    note: "Awarded for sustained impact 10 years after publication."
-  - name: "Editor's Choice"
-    level: featured
+abstract: |
+  Interior structure models suggest that many giant exoplanets contain far
+  more heavy elements than classical formation models predict. Pebble drift
+  combined with volatile evaporation offers a way to enrich the gas that
+  forming giant planets accrete. We model the growth of ten observed giant
+  planets in an evolving protoplanetary disc, and successfully reproduce
+  the heavy-element content of nine of them. This lets us infer where each
+  planet formed and predict its atmospheric composition. Because most of the
+  heavy elements are accreted as water vapour, our models predict
+  atmospheres with high O/H and low C/O ratios, in general agreement with
+  observations.
 
-funding:
-  - funder: "National Science Foundation"
-    grant: "NSF-1234567"
-
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
-
-# Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: I used a semi-analytic planet formation simulation code (`chemcomp`) to explain the heavy-element content of 10 metal-enriched gas giant exoplanets. In doing so, I was able to make predictions about where these planets formed and what their atmospheric C/O would be.
 
 tags:
-- Source Themes
-featured: false
+- Planet formation
+- Giant planets
+- Atmospheric composition
+- C/O ratio
+- Protoplanetary discs
+featured: true
 
 hugoblox:
   ids:
-    arxiv: 1512.04133v1
+    arxiv: 2512.07944
+    doi: 10.1051/0004-6361/202556898
 
 links:
   - type: pdf
-    url: http://arxiv.org/pdf/1512.04133v1
-  - type: code
-    url: https://github.com/HugoBlox/kit
-  - type: dataset
-    url: ""
-  - type: poster
-    url: ""
-  - type: project
-    url: ""
-  - type: slides
-    url: https://www.slideshare.net/
+    url: https://www.aanda.org/articles/aa/pdf/2026/02/aa56898-25.pdf
   - type: source
-    url: ""
-  - type: video
-    url: ""
+    url: https://doi.org/10.1051/0004-6361/202556898
+  # - type: poster
+  #   url: ""   # e.g. if you presented this at a meeting
+  # - type: code
+  #   url: ""
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# Featured image: add featured.png/jpg to this folder (e.g. your key figure)
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
+  caption: ""
   focal_point: ""
   preview_only: false
 
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/projects/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
 projects: []
-
-# Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
 slides: ""
 ---
 
-> [!NOTE]
-> Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+Giant exoplanets often contain more heavy elements than the classical core
+accretion picture can easily explain. In this paper we test whether
+**pebble drift and evaporation**, where icy pebbles drift inwards through the
+disc and release volatile vapour as they cross evaporation fronts, can supply
+that extra enrichment.
 
-> [!NOTE]
-> Create your slides in Markdown - click the *Slides* button to check out the example.
+We simulated the formation of ten observed giant planets and matched the heavy-element
+content of nine of them, which tells us roughly where in the disc each one
+likely formed. Since most of the accreted heavy elements arrive as water
+vapour, the models predict **oxygen-rich, low C/O atmospheres**, in line
+with what's being observed.
 
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+This work was my undergraduate final-year project at University College Cork, supervised by
+Prof. Bertram Bitsch.

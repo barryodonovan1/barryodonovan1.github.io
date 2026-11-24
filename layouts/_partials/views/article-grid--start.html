@@ -1,0 +1,6 @@
+{{/* Override of Hugo Blox article-grid--start.html: widen the single-item layout (default was max-w-[500px]) */}}
+{{ $columns := .config.columns | default 2 }}
+{{ $len := .config.len | default 2 }}
+{{/* NOTE: dynamic `md:grid-cols-{{$columns}}` class requires Tailwind exception */}}
+<div class="container px-8 mx-auto xl:px-5 py-5 lg:py-8 max-w-screen-lg {{ if eq $len 1 }}justify-center{{end}}">
+  <div class="grid gap-10 {{ if ne $len 1 }}md:grid-cols-{{$columns}}{{end}} lg:gap-10">

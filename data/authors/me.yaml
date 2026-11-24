@@ -2,115 +2,108 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Dr. Alex Johnson
-  given: Alex
-  family: Johnson
-  alternate: ''  # Example: 王伟
-  pronunciation: ''  # Example: Wáng Wěi
-  pronouns: he/him
-postnominals:
-  - PhD
-  - MIEEE
+  display: "Barry O'Donovan"
+  given: Barry
+  family: "O'Donovan"
+  alternate: ''
+  pronunciation: ''
+  pronouns: 'he/him'  
+postnominals: []
 status:
-  icon: "☕️"
-role: Senior AI Research Scientist
+  icon: "🔭"
+role: PhD Student in Astrophysics
 bio: |
-  Alex Johnson is a Senior AI Research Scientist at Meta AI. His research
-  has been published in top conferences like NeurIPS and ICML, with over
-  10,000 citations. Alex is passionate about pushing the boundaries of AI
-  while ensuring ethical development.
+  I am a PhD student at Trinity College Dublin, working with
+  Prof. Johanna Vos. I study the atmospheres of brown dwarfs using atmospheric retrievals on JWST spectra to measure their
+  chemistry, temperature structure and clouds. 
+# I am a co-developer of the
+# Brewster retrieval code.
 
 affiliations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: Trinity College Dublin
+    url: https://www.tcd.ie/physics/
 
 links:
   - icon: at-symbol
-    url: mailto:alex.johnson@example.com
+    url: mailto:odonovb3@tcd.ie  # TODO: check this is the address you want public
     label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/example
   - icon: brands/github
-    url: https://github.com/example
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/example/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=example
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://github.com/barryodonovan1
+  # - icon: academicons/orcid
+  #   url: https://orcid.org/0000-0000-0000-0000  # TODO: your ORCID iD
+  # - icon: academicons/ads
+  #   url: https://ui.adsabs.harvard.edu/  # TODO: link to your ADS library/author query
+  # - icon: brands/linkedin
+  #   url: https://www.linkedin.com/in/your-handle/
+  # - icon: brands/bluesky
+  #   url: https://bsky.app/profile/your-handle
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Brown dwarf atmospheres
+  - Directly imaged exoplanets
+  - Atmospheric retrievals
+  - JWST spectroscopy
+  - Clouds in substellar atmospheres
 
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
+  - degree: PhD Physics
+    institution: Trinity College Dublin
+    start: 2025-09-01
     summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
-    button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
+      Atmospheric retrievals of brown dwarfs with
+      JWST NIRSpec and MIRI spectra. Supervised by Prof. Johanna Vos.
+  - degree: BSc Astrophysics
+    institution: University College Cork
+    start: 2021-09-01
+    end: 2025-05-30  # TODO: check end date
+    summary: |
+      Final-year project with Prof. Bertram Bitsch, published as a first-author
+      paper in Astronomy & Astrophysics.
+  # - degree: Exchange Semester
+  #   institution: University of California, Berkeley
+  #   start: 2023-08-15  # TODO: check dates
+  #   end: 2023-12-20
 
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
+  - role: Outreach Volunteer, Transition Year Physics Experience
+    org: Trinity College Dublin
+    start: 2025-09-01  # TODO: check start date
     summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
-    button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
+      Running physics activities for secondary-school students visiting TCD.
+  - role: Mentor
+    org: All Ireland Scholarships
+    start: 2025-09-01  # TODO: check start date
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      Mentoring scholarship recipients through the All Ireland Scholarships
+      mentor programme.
 
-skills:
-  - name: Technical Skills
-    items:
-      - label: Python
-        level: 5
-      - label: Machine Learning
-        level: 5
-      - label: Cloud Computing
-        level: 4
-  - name: Research & Communication
-    items:
-      - label: Academic Writing
-        level: 5
-      - label: Conference Presentations
-        level: 4
-      - label: Grant Proposals
-        level: 4
+# skills:
+#   - name: Technical Skills
+#     items:
+#       - label: Python
+#         level: 5
+#       - label: Bayesian inference (MCMC, nested sampling)
+#         level: 5
+#       - label: HPC and SLURM
+#         level: 4
+#   - name: Research & Communication
+#     items:
+#       - label: Academic Writing
+#         level: 4
+#       - label: Conference Presentations
+#         level: 4
+#       - label: Science Outreach
+#         level: 4
 
 languages:
   - name: English
     level: 5
     label: Native
-  - name: Spanish
-    level: 4
-    label: Fluent
+  # TODO: add Irish or any others here, or delete this section
 
 awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
+  - title: Runner-up, IOP Earnshaw Prize
+    awarder: Institute of Physics Ireland
+    date: "2025-06-01"  # TODO: check date
+    summary: Awarded for one of the best undergraduate physics projects in Ireland.
     icon: hero/trophy
