@@ -29,8 +29,9 @@ links:
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/barryodonovan1
-  # - icon: academicons/orcid
-  #   url: https://orcid.org/0000-0000-0000-0000  # TODO: your ORCID iD
+  - icon: academicons/orcid
+    url: https://orcid.org/0009-0000-3375-2098
+    label: ORCID
   # - icon: academicons/ads
   #   url: https://ui.adsabs.harvard.edu/  # TODO: link to your ADS library/author query
   # - icon: brands/linkedin
@@ -46,37 +47,118 @@ interests:
   - Clouds in substellar atmospheres
 
 education:
-  - degree: PhD Physics
+  - degree: PhD Astrophysics
     institution: Trinity College Dublin
     start: 2025-09-01
-    year: 2025-09-01 to present  # shown in the bio instead of start/end
+    end: 2029-09-01  # expected; TODO: adjust day if needed
     summary: |
-      Atmospheric retrievals of brown dwarfs with
-      JWST NIRSpec and MIRI spectra. Supervised by Prof. Johanna Vos.
+      *Probing extrasolar atmospheres with atmospheric retrievals*.
+      Supervised by Prof. Johanna Vos.
   - degree: BSc Astrophysics
     institution: University College Cork
     start: 2021-09-01
-    end: 2025-05-30  # TODO: check end date
+    end: 2025-05-01
     summary: |
-      Final-year project with Prof. Bertram Bitsch, published as a first-author
-      paper in Astronomy & Astrophysics.
-  # - degree: Exchange Semester
-  #   institution: University of California, Berkeley
-  #   start: 2023-08-15  # TODO: check dates
-  #   end: 2023-12-20
+      First Class Honours (85%). Ranked first in the Physics & Astrophysics
+      programme in every year of study.
+
+# Extra education entries: shown on the Experience page only, not in the homepage bio
+# (read by layouts/_partials/hbx/blocks/resume-experience/block.html)
+education_extra:
+  - degree: Exchange Semester (UCEAP)
+    institution: University of California, Berkeley
+    start: 2023-08-01
+    end: 2023-12-01
+    summary: |
+      GPA 3.9/4.0. One of two UCC students selected for the University of
+      California Education Abroad Program.
 
 experience:
-  - role: Outreach Volunteer, Transition Year Physics Experience
+  # Research
+  - group: Research
+    role: PhD Researcher
     org: Trinity College Dublin
-    start: 2025-09-01  # TODO: check start date
+    start: 2025-09-01
     summary: |
-      Running physics activities for secondary-school students visiting TCD.
-  - role: Mentor
+      Atmospheric retrievals of the young, cloudy L dwarf 2MASS J0355+1133
+      using JWST NIRSpec and MIRI spectra spanning the near- to mid-infrared,
+      to constrain its chemistry, temperature structure and clouds.
+      Co-developer of the [Brewster](https://github.com/barryodonovan1/brewster_v2)
+      retrieval code, and PI of a EuroHPC allocation on the MeluXina
+      supercomputer to run these retrievals. Supervised by Prof. Johanna Vos.
+  - group: Research
+    role: Final-Year Project
+    org: University College Cork
+    start: 2025-01-01
+    end: 2025-08-01
+    summary: |
+      Giant planet formation with pebble drift and evaporation. Using the
+      semi-analytic formation code chemcomp, I modelled the growth of ten
+      observed metal-enriched giant exoplanets, reproduced the heavy-element
+      content of nine of them, inferred where they formed, and predicted their
+      atmospheric C/O and O/H. Published as a first-author paper in
+      [A&A](/publications/journal-article/), and runner-up for the IOP Earnshaw Award.
+      Supervisor: Prof. Bertram Bitsch.
+  - group: Research
+    role: Summer Research Intern
+    org: University College Cork
+    start: 2024-06-01
+    end: 2024-09-01
+    summary: Galactic habitability in a cosmological simulation.
+  - group: Research
+    role: Summer Research Intern
+    org: University College Cork
+    start: 2023-06-01
+    end: 2023-08-01
+    summary: Magnetically suspended fan for an atmospheric simulation chamber.
+  # Teaching
+  - group: Teaching
+    role: Physics Laboratory Demonstrator
+    org: Trinity College Dublin
+    start: 2025-09-01  # CV says 2025
+  - group: Teaching
+    role: Physics Tutor
+    org: Trinity College Dublin
+    start: 2025-09-01
+  - group: Teaching
+    role: Physics Tutor
+    org: University College Cork
+    start: 2024-09-01
+    end: 2025-05-01
+    summary: First-year physics and engineering.
+  - group: Teaching
+    role: Physics Laboratory Demonstrator
+    org: University College Cork
+    start: 2023-01-01
+    end: 2023-05-01
+  # Service
+  - group: Service
+    role: Organiser, Exoplanet Journal Club
+    org: Trinity College Dublin
+    start: 2025-09-01  # CV says 2025
+  - group: Service
+    role: Volunteer, EAS Annual Meeting 2025 (Cork)
+    org: European Astronomical Society
+    start: 2025-06-01
+    end: 2025-06-01
+  # Outreach
+  - group: Outreach
+    role: Volunteer, Transition Year Physics Experience (TYPE)
+    org: Trinity College Dublin
+    start: 2025-09-01  # CV says 2025
+    summary: Running physics activities for secondary-school students visiting TCD.
+  - group: Outreach
+    role: Mentor, All Ireland Scholarships Mentor Programme
     org: All Ireland Scholarships
-    start: 2025-09-01  # TODO: check start date
+    start: 2025-09-01  # CV says 2025
+  - group: Outreach
+    role: Tutor, UCC Maths Enrichment Programme
+    org: University College Cork
+    start: 2023-01-01
+    end: 2023-05-01
     summary: |
-      Mentoring scholarship recipients through the All Ireland Scholarships
-      mentor programme.
+      Teaching gifted secondary-school students advanced mathematics beyond
+      the secondary-school curriculum.
 
 # skills:
 #   - name: Technical Skills
@@ -103,8 +185,54 @@ languages:
   # TODO: add Irish or any others here, or delete this section
 
 awards:
-  - title: Runner-up, IOP Earnshaw Prize
+  - title: EuroHPC MeluXina (Class B) allocation, PI
+    awarder: EuroHPC Joint Undertaking
+    date: "2026-01-01"
+    summary: |
+      Principal investigator on a Class B allocation of 3.2 × 10⁶ CPU-hours on the
+      MeluXina supercomputer (Luxembourg), to run atmospheric retrievals of
+      JWST brown dwarf spectra with Brewster.
+    icon: hero/trophy
+  - title: Runner-up, IOP Earnshaw Award
     awarder: Institute of Physics Ireland
-    date: "2025-06-01"  # TODO: check date
-    summary: Awarded for one of the best undergraduate physics projects in Ireland.
+    date: "2025-01-01"
+    summary: |
+      Ranked in the top 3 final-year physics projects in Ireland, for my
+      project on giant planet formation with pebble drift and evaporation.
+    icon: hero/trophy
+  - title: Ranked 1st in UCC Physics & Astrophysics, four years running (2021 – 2025)
+    awarder: University College Cork
+    date: "2025-01-01"
+    summary: Top of the Physics & Astrophysics programme in every year of study.
+    icon: hero/trophy
+  - title: Quercus College Scholarship (€500)
+    awarder: University College Cork
+    date: "2023-01-01"
+    summary: |
+      Part of UCC's Quercus Talented Students' Programme, awarded to the
+      top-performing continuing students in each college. One of 21
+      recipients in the College of Science, Engineering and Food Science.
+    icon: hero/trophy
+  - title: UC Education Abroad Program
+    awarder: University of California
+    date: "2023-01-01"
+    summary: |
+      One of two UCC students selected for an exchange semester at the
+      University of California, Berkeley.
+    icon: hero/trophy
+  - title: All Ireland Scholarship (€27,000)
+    awarder: JP McManus Trust
+    date: "2022-01-01"
+    summary: |
+      Funded by the JP McManus Charitable Trust, the All Ireland Scholarship
+      supports high-achieving Leaving Certificate and A-Level students from
+      lower-income backgrounds through their undergraduate degree. One of 125
+      recipients nationally.
+    icon: hero/trophy
+  - title: Quercus Entrance Scholarship (€100)
+    awarder: University College Cork
+    date: "2021-01-01"
+    summary: |
+      Part of UCC's Quercus Talented Students' Programme, awarded to incoming
+      first-year students for academic excellence in the Leaving Certificate.
     icon: hero/trophy

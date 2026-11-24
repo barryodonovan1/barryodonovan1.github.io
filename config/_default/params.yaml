@@ -127,7 +127,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   seo:
     # Browser tab title override (defaults to identity.name if not set)
-    title: ""
+    title: "Barry O'Donovan | Astrophysics PhD, Trinity College Dublin"
     # For local_business identity type only
     location:
       address:
@@ -217,7 +217,7 @@ hugoblox:
   # Search engine site verification codes
   # ────────────────────────────────────────────────────────────────────────────
   verification:
-    google: ""
+    google: "3_8Z4d8bcqklaMSBT4j2XLZ5FWHpXXlS0F2vOFX0Kq8"
     bing: ""
     baidu: ""
     yandex: ""

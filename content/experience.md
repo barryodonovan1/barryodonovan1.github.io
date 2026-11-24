@@ -17,17 +17,21 @@ sections:
       # Hugo date format
       date_format: 'January 2006'
       # Education or Experience section first?
-      is_education_first: false
-  - block: resume-skills
-    content:
-      title: Skills & Hobbies
-      username: me
+      is_education_first: true
+  # Hidden until skills are added in data/authors/me.yaml
+  # - block: resume-skills
+  #   content:
+  #     title: Skills & Hobbies
+  #     username: me
   - block: resume-awards
     content:
-      title: Awards
+      title: Awards and Grants
       username: me
-  - block: resume-languages
-    content:
-      title: Languages
-      username: me
+    design:
+      date_format: '2006' # show the year only
+  # Hidden for now
+  # - block: resume-languages
+  #   content:
+  #     title: Languages
+  #     username: me
 ---
