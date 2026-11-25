@@ -56,15 +56,15 @@ sections:
 
         - **Clouds**: how they form, what they're made of, how they're
           distributed across the atmosphere, and how they evolve over time
-        - **Chemistry**: what the abundances of molecules like H₂O, CO, CH₄
-          and NH₃ tell us about atmospheric processes and how these objects
-          formed
+        - **Chemistry**: using molecular abundances to measure properties
+          like the C/O ratio and metallicity, which carry clues to how these
+          objects formed
         - **The L/T transition**: the poorly understood point where brown
           dwarfs cool enough for their clouds to clear, and their spectra
           change dramatically
 
-        A major focus of my PhD is **2MASS J0355+1133**, a young, very red L
-        dwarf, which I'm studying with JWST NIRSpec and MIRI spectra spanning
+        A major focus of my PhD is **2MASS J0355+1133**, a young, very red and
+        cloudy L dwarf, which I'm studying with JWST NIRSpec and MIRI spectra spanning
         the near- to mid-infrared. I'm retrieving its atmosphere with the [Brewster](https://github.com/barryodonovan1/brewster_v2) retrieval framework.
 
         I'm always happy to chat about brown dwarfs, retrievals or
